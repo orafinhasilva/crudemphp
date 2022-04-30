@@ -3,14 +3,14 @@ include 'partes/header.php';
 require __DIR__ . '/users/users.php';
 
 if (!isset($_GET['id'])) {
-    include "partes/not_found.php";
+    include "partes/404.php";
     exit;
 }
 $userId = $_GET['id'];
 
 $user = getUserById($userId);
 if (!$user) {
-    include "partes/not_found.php";
+    include "partes/404.php";
     exit;
 }
 
