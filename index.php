@@ -47,7 +47,7 @@ include 'partes/header.php';
                     <a href="visualizar.php?id=<?php echo $user['id'] ?>" class="btn btn-sm btn-outline-info">Visualizar</a>
                     <a href="atualizar.php?id=<?php echo $user['id'] ?>"
                        class="btn btn-sm btn-outline-secondary">Atualizar</a>
-                    <form method="POST" action="delete.php">
+                    <form method="POST" action="deletar.php">
                         <input type="hidden" name="id" value="<?php echo $user['id'] ?>">
                         <button class="btn btn-sm btn-outline-danger">Deletar</button>
                     </form>
