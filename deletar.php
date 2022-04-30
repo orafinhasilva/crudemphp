@@ -4,7 +4,7 @@ require __DIR__ . '/users/users.php';
 
 
 if (!isset($_POST['id'])) {
-    include "partes/not_found.php";
+    include "partes/404.php";
     exit;
 }
 $userId = $_POST['id'];
